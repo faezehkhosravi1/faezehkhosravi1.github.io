@@ -62,12 +62,16 @@ body {
 
 /* PROFILE */
 .profile {
-  display: grid;
-  grid-template-columns: 180px 1fr;
+  display: flex;
+  flex-direction: row;
   gap: 40px;
   margin-bottom: 52px;
-  align-items: start;
-  overflow: hidden;
+  align-items: flex-start;
+}
+
+.profile-photo-col {
+  flex: 0 0 180px;
+  width: 180px;
 }
 
 .profile-img {
@@ -77,8 +81,11 @@ body {
   object-position: center top;
   display: block;
   border: 1px solid var(--border);
-  flex-shrink: 0;
-  max-width: 180px;
+}
+
+.profile-text-col {
+  flex: 1;
+  min-width: 0;
 }
 
 .profile-name {
@@ -239,7 +246,8 @@ footer {
 
 @media (max-width: 600px) {
   body { padding: 32px 20px 60px; }
-  .profile { grid-template-columns: 1fr; }
+  .profile { flex-direction: column; }
+  .profile-photo-col { width: 140px; flex: 0 0 140px; }
   .profile-img { width: 140px; height: 170px; }
   .top-nav { gap: 1.2rem; }
 }
@@ -256,8 +264,10 @@ footer {
 
 <!-- PROFILE -->
 <div class="profile">
-  <img src="photo2.jpg" alt="Faezeh Khosravi">
-  <div>
+  <div class="profile-photo-col">
+    <img src="photo2.jpg" alt="Faezeh Khosravi" class="profile-img">
+  </div>
+  <div class="profile-text-col">
     <h1 class="profile-name">Faezeh Khosravi</h1>
     <p class="profile-title">Ph.D. Candidate in Economics</p>
     <p class="profile-inst">Georgia State University, Andrew Young School of Policy Studies</p>
