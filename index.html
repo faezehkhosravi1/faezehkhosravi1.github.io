@@ -4,6 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Faezeh Khosravi — Economist</title>
+<meta name="description" content="Faezeh Khosravi — PhD Candidate in Economics at Georgia State University. Job Market Candidate 2026–2027.">
+<meta property="og:title" content="Faezeh Khosravi — Economist">
+<meta property="og:description" content="PhD Candidate at GSU. Health Economics · Labor Economics · Applied Microeconometrics.">
+<meta property="og:image" content="photo2.jpg">
+<meta property="og:url" content="https://faezehkhosravi1.github.io">
+<meta name="twitter:card" content="summary_large_image">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCS3TXCHFK"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -14,219 +20,234 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
 :root {
-  --bg: #f5f2ec;
-  --bg2: #edeae2;
-  --ink: #1c1917;
-  --ink2: #57534e;
-  --accent: #9b4523;
-  --accent2: #c8784f;
-  --gold: #c9a84c;
-  --border: rgba(28,25,23,0.1);
-  --card: #ffffff;
+  --bg: #f5f2ec; --bg2: #edeae2; --ink: #1c1917; --ink2: #57534e;
+  --accent: #9b4523; --accent2: #c8784f; --gold: #c9a84c;
+  --border: rgba(28,25,23,0.1); --card: #ffffff;
   --serif: 'Cormorant Garamond', Georgia, serif;
   --sans: 'Outfit', sans-serif;
   --transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
-
 [data-theme="dark"] {
-  --bg: #0f0e0d;
-  --bg2: #1a1917;
-  --ink: #f0ece4;
-  --ink2: #a09890;
-  --accent: #e07a4f;
-  --gold: #d4af6a;
-  --border: rgba(240,236,228,0.1);
-  --card: #1e1c1a;
+  --bg: #0f0e0d; --bg2: #1a1917; --ink: #f0ece4; --ink2: #a09890;
+  --accent: #e07a4f; --gold: #d4af6a;
+  --border: rgba(240,236,228,0.1); --card: #1e1c1a;
 }
-
 html { scroll-behavior: smooth; }
-body {
-  background: var(--bg); color: var(--ink);
-  font-family: var(--sans); font-size: 15px; line-height: 1.7;
-  transition: background var(--transition), color var(--transition);
-  overflow-x: hidden;
-}
+body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 15px; line-height: 1.7; transition: background var(--transition), color var(--transition); overflow-x: hidden; }
+body::before { content:''; position:fixed; inset:0; z-index:999; pointer-events:none; opacity:0.02; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
 
-body::before {
-  content: ''; position: fixed; inset: 0; z-index: 999; pointer-events: none; opacity: 0.02;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-}
+/* JM BANNER */
+.jm-banner { background:var(--accent); color:#fff; text-align:center; padding:9px 2rem; font-size:11px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; position:fixed; top:0; left:0; right:0; z-index:200; }
 
 /* NAV */
-nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 0 3rem; height: 60px;
-  background: color-mix(in srgb, var(--bg) 88%, transparent);
-  backdrop-filter: blur(16px);
-  border-bottom: 1px solid var(--border);
-  transition: background var(--transition);
-}
-.nav-logo { font-family: var(--serif); font-size: 18px; font-weight: 300; color: var(--ink); text-decoration: none; letter-spacing: 0.02em; }
-.nav-logo em { color: var(--accent); font-style: italic; }
-.nav-right { display: flex; align-items: center; gap: 2.5rem; }
-.nav-links { display: flex; gap: 2rem; list-style: none; }
-.nav-links a { font-size: 12px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink2); text-decoration: none; transition: color 0.2s; position: relative; }
-.nav-links a::after { content: ''; position: absolute; bottom: -3px; left: 0; width: 0; height: 1px; background: var(--accent); transition: width 0.3s; }
-.nav-links a:hover { color: var(--accent); }
-.nav-links a:hover::after { width: 100%; }
-.theme-btn { background: none; border: 1px solid var(--border); width: 36px; height: 36px; border-radius: 50%; cursor: pointer; color: var(--ink2); display: flex; align-items: center; justify-content: center; font-size: 15px; transition: all 0.3s; }
-.theme-btn:hover { border-color: var(--accent); color: var(--accent); transform: rotate(25deg); }
+nav { position:fixed; top:37px; left:0; right:0; z-index:100; display:flex; align-items:center; justify-content:space-between; padding:0 3rem; height:54px; background:color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter:blur(16px); border-bottom:1px solid var(--border); }
+.nav-logo { font-family:var(--serif); font-size:17px; font-weight:300; color:var(--ink); text-decoration:none; }
+.nav-logo em { color:var(--accent); font-style:italic; }
+.nav-right { display:flex; align-items:center; gap:2rem; }
+.nav-links { display:flex; gap:1.75rem; list-style:none; }
+.nav-links a { font-size:11px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink2); text-decoration:none; transition:color 0.2s; position:relative; }
+.nav-links a::after { content:''; position:absolute; bottom:-3px; left:0; width:0; height:1px; background:var(--accent); transition:width 0.3s; }
+.nav-links a:hover { color:var(--accent); }
+.nav-links a:hover::after { width:100%; }
+.theme-btn { background:none; border:1px solid var(--border); width:34px; height:34px; border-radius:50%; cursor:pointer; color:var(--ink2); display:flex; align-items:center; justify-content:center; font-size:14px; transition:all 0.3s; }
+.theme-btn:hover { border-color:var(--accent); color:var(--accent); transform:rotate(25deg); }
 
-/* HERO */
-.hero {
-  min-height: 100vh; padding-top: 60px;
-  display: grid; grid-template-columns: 1fr 360px;
+/* PROFILE SECTION — replaces hero */
+.profile {
   max-width: 1100px; margin: 0 auto;
-  padding-left: 3rem; padding-right: 3rem;
-  align-items: center; gap: 5rem;
+  padding: 5.5rem 3rem 4rem;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 5rem;
+  align-items: start;
+  padding-top: 130px;
 }
-.hero-eyebrow { display: flex; align-items: center; gap: 12px; margin-bottom: 1.75rem; opacity: 0; animation: fadeUp 0.8s 0.2s forwards; }
-.eyebrow-line { width: 36px; height: 1px; background: var(--accent); }
-.eyebrow-text { font-size: 11px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); }
-.hero-name { font-family: var(--serif); font-size: clamp(3.5rem, 6vw, 5.5rem); font-weight: 300; line-height: 1.05; opacity: 0; animation: fadeUp 0.8s 0.35s forwards; }
-.hero-name em { display: block; color: var(--accent); font-style: italic; }
-.typewriter-wrap { margin: 1.25rem 0 1.75rem; min-height: 22px; opacity: 0; animation: fadeUp 0.8s 0.5s forwards; }
-.typewriter { font-size: 14px; color: var(--ink2); letter-spacing: 0.05em; }
-.typewriter::after { content: '|'; color: var(--accent); animation: blink 1s infinite; }
-@keyframes blink { 0%,100%{opacity:1}50%{opacity:0} }
-.hero-desc { font-size: 15px; color: var(--ink2); max-width: 460px; line-height: 1.9; margin-bottom: 2.25rem; opacity: 0; animation: fadeUp 0.8s 0.65s forwards; }
-.hero-btns { display: flex; gap: 12px; flex-wrap: wrap; opacity: 0; animation: fadeUp 0.8s 0.8s forwards; }
-.btn { display: inline-flex; align-items: center; gap: 8px; padding: 11px 24px; border-radius: 2px; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; cursor: pointer; transition: all 0.25s; border: none; font-family: var(--sans); }
-.btn-primary { background: var(--accent); color: #fff; }
-.btn-primary:hover { background: var(--accent2); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(155,69,35,0.25); }
-.btn-ghost { background: transparent; color: var(--ink); border: 1px solid var(--border); }
-.btn-ghost:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
 
-.hero-stats { display: flex; gap: 2.5rem; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); opacity: 0; animation: fadeUp 0.8s 0.95s forwards; }
-.stat-num { font-family: var(--serif); font-size: 2.5rem; font-weight: 300; color: var(--accent); line-height: 1; display: block; }
-.stat-label { font-size: 10px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink2); margin-top: 4px; display: block; }
+.profile-photo-wrap { position: relative; }
+.profile-photo-wrap::after { content:''; position:absolute; top:16px; left:-16px; width:100%; height:100%; border:1px solid color-mix(in srgb, var(--accent) 30%, transparent); border-radius:2px; z-index:-1; transition:all 0.4s; }
+.profile-photo-wrap:hover::after { top:8px; left:-8px; }
+.profile-img { width:100%; aspect-ratio:3/4; object-fit:cover; object-position:center top; border-radius:2px; display:block; }
 
-/* Hero photo */
-.hero-photo { position: relative; opacity: 0; animation: fadeIn 1.2s 0.4s forwards; }
-.hero-photo::after { content: ''; position: absolute; top: 20px; right: -20px; width: 100%; height: 100%; border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent); border-radius: 2px; transition: all 0.4s; }
-.hero-photo:hover::after { top: 10px; right: -10px; }
-.hero-img { width: 100%; height: 540px; object-fit: cover; object-position: center top; border-radius: 2px; display: block; filter: grayscale(10%); transition: filter 0.5s; }
-.hero-img:hover { filter: grayscale(0%); }
+.profile-social { display:flex; gap:10px; margin-top:1.25rem; flex-wrap:wrap; }
+.social-btn { display:inline-flex; align-items:center; gap:6px; padding:7px 14px; border:1px solid var(--border); border-radius:2px; font-size:11px; font-weight:500; letter-spacing:0.06em; text-decoration:none; color:var(--ink2); transition:all 0.2s; }
+.social-btn:hover { border-color:var(--accent); color:var(--accent); }
 
-/* Scroll hint */
-.scroll-hint { position: absolute; bottom: 2.5rem; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 8px; opacity: 0; animation: fadeIn 1s 2s forwards; }
-.scroll-hint-text { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink2); }
-.scroll-hint-bar { width: 1px; height: 48px; background: linear-gradient(to bottom, var(--accent), transparent); animation: scrollAnim 2s infinite; }
-@keyframes scrollAnim { 0%,100%{opacity:0.3;transform:scaleY(0.8)}50%{opacity:1;transform:scaleY(1)} }
+.profile-right { padding-top: 0.5rem; }
+.profile-tag { font-size:11px; font-weight:500; letter-spacing:0.15em; text-transform:uppercase; color:var(--accent); margin-bottom:0.75rem; display:flex; align-items:center; gap:10px; }
+.profile-tag::before { content:''; width:28px; height:1px; background:var(--accent); }
+.profile-name { font-family:var(--serif); font-size:clamp(2.8rem,5vw,4.2rem); font-weight:300; line-height:1.05; margin-bottom:0.5rem; }
+.profile-name em { font-style:italic; color:var(--accent); }
+.profile-identity { font-size:14px; color:var(--ink2); margin-bottom:1.75rem; letter-spacing:0.03em; }
+
+/* Research statement */
+.research-statement { font-family:var(--serif); font-size:1.2rem; font-weight:300; line-height:1.7; color:var(--ink); max-width:580px; margin-bottom:2rem; font-style:italic; padding-left:1.25rem; border-left:3px solid var(--accent); }
+
+.profile-fields { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:2rem; }
+.field-tag { font-size:11px; padding:5px 14px; border:1px solid var(--border); border-radius:2px; color:var(--ink2); background:var(--bg2); transition:all 0.2s; }
+.field-tag:hover { border-color:var(--accent); color:var(--accent); }
+
+.profile-btns { display:flex; gap:12px; flex-wrap:wrap; margin-bottom:2.5rem; }
+.btn { display:inline-flex; align-items:center; gap:8px; padding:11px 24px; border-radius:2px; font-size:12px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; text-decoration:none; cursor:pointer; transition:all 0.25s; border:none; font-family:var(--sans); }
+.btn-primary { background:var(--accent); color:#fff; }
+.btn-primary:hover { background:var(--accent2); transform:translateY(-2px); box-shadow:0 8px 24px rgba(155,69,35,0.25); }
+.btn-ghost { background:transparent; color:var(--ink); border:1px solid var(--border); }
+.btn-ghost:hover { border-color:var(--accent); color:var(--accent); transform:translateY(-2px); }
+
+.profile-stats { display:grid; grid-template-columns:repeat(4,1fr); gap:1.25rem; padding-top:2rem; border-top:1px solid var(--border); }
+.stat-box { text-align:center; padding:1rem; background:var(--bg2); border-radius:2px; }
+.stat-num { font-family:var(--serif); font-size:2rem; font-weight:300; color:var(--accent); line-height:1; display:block; }
+.stat-label { font-size:10px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink2); margin-top:4px; display:block; }
 
 /* SECTIONS */
-.wrap { max-width: 1100px; margin: 0 auto; padding: 6rem 3rem; }
-.sec-label { display: flex; align-items: center; gap: 16px; margin-bottom: 2.5rem; }
-.sec-label-text { font-size: 11px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); }
-.sec-label-line { flex: 1; height: 1px; background: var(--border); }
-.sec-title { font-family: var(--serif); font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 300; line-height: 1.2; margin-bottom: 2.5rem; }
-.sec-title em { font-style: italic; color: var(--accent); }
+.wrap { max-width:1100px; margin:0 auto; padding:5rem 3rem; }
+.sec-label { display:flex; align-items:center; gap:16px; margin-bottom:2.5rem; }
+.sec-label-text { font-size:11px; font-weight:500; letter-spacing:0.15em; text-transform:uppercase; color:var(--accent); }
+.sec-label-line { flex:1; height:1px; background:var(--border); }
+.sec-title { font-family:var(--serif); font-size:clamp(1.8rem,3vw,2.5rem); font-weight:300; line-height:1.2; margin-bottom:2.5rem; }
+.sec-title em { font-style:italic; color:var(--accent); }
 
 /* NOW BAR */
-.now-bar { background: var(--bg2); border-left: 3px solid var(--accent); padding: 1.25rem 1.75rem; border-radius: 0 3px 3px 0; display: flex; align-items: center; gap: 1.25rem; margin-bottom: 4rem; }
-.now-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); flex-shrink: 0; animation: glow 2s infinite; }
+.now-bar { background:var(--bg2); border-left:3px solid var(--accent); padding:1.25rem 1.75rem; border-radius:0 3px 3px 0; display:flex; align-items:center; gap:1.25rem; margin-bottom:3rem; }
+.now-dot { width:8px; height:8px; border-radius:50%; background:var(--accent); flex-shrink:0; animation:glow 2s infinite; }
 @keyframes glow { 0%,100%{box-shadow:0 0 0 0 rgba(155,69,35,0.4)}50%{box-shadow:0 0 0 8px rgba(155,69,35,0)} }
-.now-label { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); font-weight: 500; }
-.now-text { font-size: 14px; color: var(--ink); margin-top: 3px; }
+.now-label { font-size:10px; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent); font-weight:500; }
+.now-text { font-size:14px; color:var(--ink); margin-top:3px; }
 
-/* PAPERS */
-.paper { padding: 2rem 0; border-bottom: 1px solid var(--border); display: grid; grid-template-columns: 48px 1fr; gap: 1.5rem; align-items: start; transition: padding-left 0.3s; }
-.paper:first-child { border-top: 1px solid var(--border); }
-.paper:hover { padding-left: 10px; }
-.paper-n { font-family: var(--serif); font-size: 2rem; font-weight: 300; color: var(--border); line-height: 1; padding-top: 4px; transition: color 0.3s; }
-.paper:hover .paper-n { color: var(--accent); }
-.paper-badges { display: flex; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; align-items: center; }
-.badge { font-size: 10px; font-weight: 500; letter-spacing: 0.07em; text-transform: uppercase; padding: 3px 10px; border-radius: 2px; }
-.b-draft { background: rgba(155,69,35,0.1); color: var(--accent); }
-.b-ssrn { background: rgba(201,168,76,0.15); color: var(--gold); }
-.b-wip { background: var(--bg2); color: var(--ink2); }
-.paper-title { font-family: var(--serif); font-size: 1.15rem; font-weight: 400; line-height: 1.4; margin-bottom: 10px; }
-.paper-title a { color: var(--ink); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s, color 0.2s; }
-.paper-title a:hover { color: var(--accent); border-bottom-color: var(--accent); }
-.paper-desc { font-size: 13.5px; color: var(--ink2); line-height: 1.75; }
-.paper-venue { margin-top: 10px; font-size: 12px; color: var(--accent); font-style: italic; }
+/* JMP BLOCK — special treatment */
+.jmp-block { background:var(--card); border:1px solid var(--border); border-top:3px solid var(--accent); border-radius:0 0 2px 2px; padding:2.5rem; margin-bottom:2rem; transition:box-shadow 0.3s; }
+.jmp-block:hover { box-shadow:0 8px 32px rgba(155,69,35,0.1); }
+.jmp-label { display:inline-flex; align-items:center; gap:6px; background:var(--accent); color:#fff; font-size:10px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; padding:5px 14px; border-radius:2px; margin-bottom:1.25rem; }
+.jmp-title { font-family:var(--serif); font-size:1.35rem; font-weight:400; line-height:1.4; margin-bottom:1rem; color:var(--ink); }
+.jmp-abstract { font-size:14px; color:var(--ink2); line-height:1.8; margin-bottom:1.5rem; }
+.jmp-why { background:var(--bg2); border-radius:2px; padding:1rem 1.25rem; margin-bottom:1.5rem; font-size:13.5px; color:var(--ink); line-height:1.7; }
+.jmp-why strong { color:var(--accent); }
+
+/* OTHER PAPERS */
+.paper { padding:1.75rem 0; border-bottom:1px solid var(--border); display:grid; grid-template-columns:40px 1fr; gap:1.25rem; align-items:start; transition:padding-left 0.3s; }
+.paper:first-child { border-top:1px solid var(--border); }
+.paper:hover { padding-left:10px; }
+.paper-n { font-family:var(--serif); font-size:1.6rem; font-weight:300; color:var(--border); line-height:1; padding-top:4px; transition:color 0.3s; }
+.paper:hover .paper-n { color:var(--accent); }
+.paper-badges { display:flex; gap:8px; margin-bottom:8px; flex-wrap:wrap; align-items:center; }
+.badge { font-size:10px; font-weight:500; letter-spacing:0.07em; text-transform:uppercase; padding:3px 10px; border-radius:2px; }
+.b-ssrn { background:rgba(201,168,76,0.15); color:var(--gold); }
+.b-wip { background:var(--bg2); color:var(--ink2); }
+.b-solo { background:rgba(74,90,42,0.12); color:#4a5a2a; }
+.b-dis { background:rgba(201,168,76,0.12); color:var(--gold); }
+.paper-title { font-family:var(--serif); font-size:1.1rem; font-weight:400; line-height:1.4; margin-bottom:8px; }
+.paper-title a { color:var(--ink); text-decoration:none; border-bottom:1px solid transparent; transition:all 0.2s; }
+.paper-title a:hover { color:var(--accent); border-bottom-color:var(--accent); }
+.paper-desc { font-size:13px; color:var(--ink2); line-height:1.75; }
+.paper-coauth { font-size:12px; color:var(--ink2); font-style:italic; margin-bottom:6px; }
 
 /* QUOTE BAND */
-.quote-band { background: var(--bg2); padding: 5rem 3rem; text-align: center; position: relative; overflow: hidden; }
-.quote-band::before { content: '\201C'; position: absolute; top: -3rem; left: 50%; transform: translateX(-50%); font-family: var(--serif); font-size: 18rem; color: var(--accent); opacity: 0.05; line-height: 1; pointer-events: none; }
-.quote-q { font-family: var(--serif); font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 300; font-style: italic; max-width: 680px; margin: 0 auto 1rem; line-height: 1.55; color: var(--ink); transition: opacity 0.5s; }
-.quote-by { font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); }
+.quote-band { background:var(--bg2); padding:4.5rem 3rem; text-align:center; position:relative; overflow:hidden; }
+.quote-band::before { content:'\201C'; position:absolute; top:-3rem; left:50%; transform:translateX(-50%); font-family:var(--serif); font-size:16rem; color:var(--accent); opacity:0.05; line-height:1; pointer-events:none; }
+.quote-q { font-family:var(--serif); font-size:clamp(1.2rem,2.5vw,1.7rem); font-weight:300; font-style:italic; max-width:640px; margin:0 auto 1rem; line-height:1.6; color:var(--ink); transition:opacity 0.5s; }
+.quote-by { font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:var(--accent); }
+
+/* CONFERENCE GRID */
+.conf-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1rem; }
+.conf-item { display:flex; align-items:flex-start; gap:12px; padding:1rem 1.25rem; background:var(--card); border:1px solid var(--border); border-radius:2px; transition:transform 0.2s,border-color 0.2s; }
+.conf-item:hover { transform:translateX(5px); border-color:var(--accent); }
+.conf-dot { width:6px; height:6px; border-radius:50%; background:var(--accent); flex-shrink:0; margin-top:7px; }
+.conf-venue { font-size:13px; font-weight:500; color:var(--ink); line-height:1.4; }
+.conf-detail { font-size:12px; color:var(--ink2); margin-top:3px; }
+.conf-year { font-size:11px; color:var(--accent); margin-top:2px; letter-spacing:0.05em; }
 
 /* TIMELINE */
-.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; }
-.timeline { position: relative; padding-left: 1.75rem; }
-.timeline::before { content: ''; position: absolute; left: 0; top: 8px; bottom: 0; width: 1px; background: linear-gradient(to bottom, var(--accent), transparent); }
-.tl-item { position: relative; padding-bottom: 2.25rem; opacity: 0; transform: translateX(-10px); transition: opacity 0.5s, transform 0.5s; }
-.tl-item.visible { opacity: 1; transform: translateX(0); }
-.tl-dot { position: absolute; left: -1.75rem; top: 6px; width: 9px; height: 9px; border-radius: 50%; background: var(--bg); border: 2px solid var(--accent); margin-left: -4px; transition: background 0.3s; }
-.tl-item:hover .tl-dot { background: var(--accent); }
-.tl-year { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); font-weight: 500; margin-bottom: 3px; }
-.tl-role { font-family: var(--serif); font-size: 1.05rem; margin-bottom: 2px; }
-.tl-place { font-size: 13px; color: var(--ink2); }
-.tl-note { font-size: 12.5px; color: var(--ink2); font-style: italic; margin-top: 3px; }
+.two-col { display:grid; grid-template-columns:1fr 1fr; gap:5rem; }
+.timeline { position:relative; padding-left:1.75rem; }
+.timeline::before { content:''; position:absolute; left:0; top:8px; bottom:0; width:1px; background:linear-gradient(to bottom, var(--accent), transparent); }
+.tl-item { position:relative; padding-bottom:2rem; opacity:0; transform:translateX(-10px); transition:opacity 0.5s, transform 0.5s; }
+.tl-item.visible { opacity:1; transform:translateX(0); }
+.tl-dot { position:absolute; left:-1.75rem; top:6px; width:9px; height:9px; border-radius:50%; background:var(--bg); border:2px solid var(--accent); margin-left:-4px; transition:background 0.3s; }
+.tl-item:hover .tl-dot { background:var(--accent); }
+.tl-year { font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent); font-weight:500; margin-bottom:3px; }
+.tl-role { font-family:var(--serif); font-size:1rem; margin-bottom:2px; }
+.tl-place { font-size:13px; color:var(--ink2); }
+.tl-note { font-size:12px; color:var(--ink2); font-style:italic; margin-top:3px; }
 
 /* SKILLS */
-.skill-card { background: var(--card); border: 1px solid var(--border); border-radius: 2px; padding: 1.5rem; margin-bottom: 1rem; transition: transform 0.3s, border-color 0.3s; }
-.skill-card:hover { transform: translateX(6px); border-color: var(--accent); }
-.skill-icon { font-size: 20px; margin-bottom: 10px; }
-.skill-title { font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
-.skill-body { font-size: 13px; color: var(--ink2); line-height: 1.8; }
+.skill-card { background:var(--card); border:1px solid var(--border); border-radius:2px; padding:1.5rem; margin-bottom:1rem; transition:transform 0.3s, border-color 0.3s; }
+.skill-card:hover { transform:translateX(6px); border-color:var(--accent); }
+.skill-icon { font-size:18px; margin-bottom:10px; }
+.skill-title { font-size:11px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent); margin-bottom:8px; }
+.skill-body { font-size:13px; color:var(--ink2); line-height:1.8; }
 
 /* AWARDS */
-.award { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--border); transition: padding-left 0.3s; }
-.award:first-child { border-top: 1px solid var(--border); }
-.award:hover { padding-left: 8px; }
-.award-name { font-size: 14px; }
-.award-yr { font-size: 12px; color: var(--accent); white-space: nowrap; font-family: var(--serif); font-style: italic; }
+.award { display:flex; justify-content:space-between; align-items:baseline; gap:1rem; padding:1rem 0; border-bottom:1px solid var(--border); transition:padding-left 0.3s; }
+.award:first-child { border-top:1px solid var(--border); }
+.award:hover { padding-left:8px; }
+.award-name { font-size:14px; }
+.award-yr { font-size:12px; color:var(--accent); white-space:nowrap; font-family:var(--serif); font-style:italic; }
+
+/* MEDIA */
+.media-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1.25rem; }
+.media-card { background:var(--card); border:1px solid var(--border); border-radius:2px; padding:1.5rem; text-decoration:none; display:flex; flex-direction:column; gap:8px; transition:transform 0.3s,border-color 0.3s; }
+.media-card:hover { transform:translateY(-4px); border-color:var(--accent); }
+.media-source { font-size:10px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent); }
+.media-title { font-family:var(--serif); font-size:1rem; font-weight:400; color:var(--ink); line-height:1.4; }
+.media-desc { font-size:13px; color:var(--ink2); line-height:1.6; }
+.media-arrow { font-size:1rem; color:var(--accent); margin-top:auto; align-self:flex-end; }
+
+/* TEACHING */
+.quote-card { background:var(--card); border:1px solid var(--border); border-left:3px solid var(--accent); border-radius:0 2px 2px 0; padding:1.25rem 1.5rem; margin-bottom:1rem; transition:transform 0.3s; }
+.quote-card:hover { transform:translateX(6px); }
+.quote-card-text { font-family:var(--serif); font-size:1rem; font-style:italic; line-height:1.6; color:var(--ink); margin-bottom:8px; }
+.quote-card-src { font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink2); }
 
 /* CONTACT */
-.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
-.contact-desc { font-size: 15px; color: var(--ink2); line-height: 1.9; margin-bottom: 2rem; }
-.contact-link { display: flex; align-items: center; gap: 12px; font-size: 14px; color: var(--ink); text-decoration: none; padding: 12px 0; border-bottom: 1px solid var(--border); transition: color 0.2s, padding-left 0.2s; }
-.contact-link:hover { color: var(--accent); padding-left: 6px; }
-.c-icon { width: 24px; font-size: 16px; }
-
-/* MESSAGE BOX */
-.msg-box { background: var(--card); border: 1px solid var(--border); border-radius: 2px; padding: 2rem; }
-.msg-title { font-family: var(--serif); font-size: 1.5rem; font-weight: 300; margin-bottom: 6px; }
-.msg-sub { font-size: 13px; color: var(--ink2); margin-bottom: 1.75rem; }
-.form-group { margin-bottom: 1.25rem; }
-.form-label { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink2); font-weight: 500; display: block; margin-bottom: 6px; }
-.form-input, .form-textarea { width: 100%; background: var(--bg2); border: 1px solid var(--border); border-radius: 2px; padding: 10px 14px; font-family: var(--sans); font-size: 14px; color: var(--ink); outline: none; transition: border-color 0.2s; }
-.form-input:focus, .form-textarea:focus { border-color: var(--accent); }
-.form-textarea { min-height: 120px; resize: vertical; }
-.anon-toggle { display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--ink2); cursor: pointer; margin-bottom: 1.25rem; user-select: none; }
-.anon-toggle input { accent-color: var(--accent); width: 15px; height: 15px; }
-.form-btn { width: 100%; justify-content: center; }
-.form-success { display: none; text-align: center; padding: 2.5rem 1rem; font-family: var(--serif); font-size: 1.3rem; color: var(--accent); line-height: 1.6; }
+.contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:start; }
+.contact-desc { font-size:15px; color:var(--ink2); line-height:1.9; margin-bottom:2rem; }
+.contact-link { display:flex; align-items:center; gap:12px; font-size:14px; color:var(--ink); text-decoration:none; padding:12px 0; border-bottom:1px solid var(--border); transition:color 0.2s,padding-left 0.2s; }
+.contact-link:hover { color:var(--accent); padding-left:6px; }
+.c-icon { width:24px; font-size:16px; }
+.msg-box { background:var(--card); border:1px solid var(--border); border-radius:2px; padding:2rem; }
+.msg-title { font-family:var(--serif); font-size:1.5rem; font-weight:300; margin-bottom:6px; }
+.msg-sub { font-size:13px; color:var(--ink2); margin-bottom:1.5rem; }
+.form-group { margin-bottom:1.25rem; }
+.form-label { font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink2); font-weight:500; display:block; margin-bottom:6px; }
+.form-input,.form-textarea { width:100%; background:var(--bg2); border:1px solid var(--border); border-radius:2px; padding:10px 14px; font-family:var(--sans); font-size:14px; color:var(--ink); outline:none; transition:border-color 0.2s; }
+.form-input:focus,.form-textarea:focus { border-color:var(--accent); }
+.form-textarea { min-height:110px; resize:vertical; }
+.anon-toggle { display:flex; align-items:center; gap:10px; font-size:13px; color:var(--ink2); cursor:pointer; margin-bottom:1.25rem; user-select:none; }
+.anon-toggle input { accent-color:var(--accent); width:15px; height:15px; }
+.form-btn { width:100%; justify-content:center; }
+.form-success { display:none; text-align:center; padding:2.5rem 1rem; font-family:var(--serif); font-size:1.3rem; color:var(--accent); line-height:1.6; }
 
 /* DIVIDER / FOOTER */
-.divider { height: 1px; background: var(--border); max-width: 1100px; margin: 0 auto; }
-footer { border-top: 1px solid var(--border); max-width: 1100px; margin: 0 auto; padding: 2rem 3rem; display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--ink2); }
+.divider { height:1px; background:var(--border); max-width:1100px; margin:0 auto; }
+footer { border-top:1px solid var(--border); max-width:1100px; margin:0 auto; padding:2rem 3rem; display:flex; justify-content:space-between; align-items:center; font-size:12px; color:var(--ink2); flex-wrap:wrap; gap:1rem; }
+.footer-links { display:flex; gap:1.5rem; }
+.footer-links a { color:var(--ink2); text-decoration:none; font-size:12px; transition:color 0.2s; }
+.footer-links a:hover { color:var(--accent); }
 
 /* ANIMATIONS */
 @keyframes fadeUp { from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)} }
 @keyframes fadeIn { from{opacity:0}to{opacity:1} }
-.reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.7s, transform 0.7s; }
-.reveal.visible { opacity: 1; transform: translateY(0); }
-.d1 { transition-delay: 0.1s; } .d2 { transition-delay: 0.2s; } .d3 { transition-delay: 0.3s; }
+.reveal { opacity:0; transform:translateY(20px); transition:opacity 0.7s, transform 0.7s; }
+.reveal.visible { opacity:1; transform:translateY(0); }
+.d1{transition-delay:0.1s} .d2{transition-delay:0.2s} .d3{transition-delay:0.3s} .d4{transition-delay:0.4s}
 
-@media (max-width: 768px) {
-  .hero { grid-template-columns: 1fr; }
-  .hero-photo { display: none; }
-  nav { padding: 0 1.5rem; }
-  .nav-links { gap: 1.2rem; }
-  .wrap { padding: 4rem 1.5rem; }
-  .two-col { grid-template-columns: 1fr; gap: 3rem; }
-  .contact-grid { grid-template-columns: 1fr; }
-  footer { flex-direction: column; gap: 1rem; text-align: center; }
+@media(max-width:768px){
+  .jm-banner{font-size:10px;padding:7px 1rem;}
+  nav{top:34px;padding:0 1.5rem;}
+  .nav-links{gap:1rem;}
+  .profile{grid-template-columns:1fr;padding-top:110px;gap:2.5rem;}
+  .profile-stats{grid-template-columns:repeat(2,1fr);}
+  .wrap{padding:3.5rem 1.5rem;}
+  .two-col{grid-template-columns:1fr;gap:3rem;}
+  .contact-grid{grid-template-columns:1fr;}
+  footer{flex-direction:column;text-align:center;}
 }
 </style>
 </head>
 <body>
+
+<!-- JOB MARKET BANNER -->
+<div class="jm-banner">🎓 Job Market Candidate 2026–2027 · Health Economics · Labor Economics · Applied Microeconometrics</div>
 
 <nav>
   <a href="index.html" class="nav-logo">Faezeh <em>Khosravi</em></a>
@@ -235,6 +256,7 @@ footer { border-top: 1px solid var(--border); max-width: 1100px; margin: 0 auto;
       <li><a href="#research">Research</a></li>
       <li><a href="#background">Background</a></li>
       <li><a href="#teaching">Teaching</a></li>
+      <li><a href="#media">Media</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="personal.html">Personal</a></li>
     </ul>
@@ -242,45 +264,58 @@ footer { border-top: 1px solid var(--border); max-width: 1100px; margin: 0 auto;
   </div>
 </nav>
 
-<!-- HERO -->
-<div class="hero" style="position:relative;">
+<!-- PROFILE -->
+<div class="profile">
   <div>
-    <div class="hero-eyebrow">
-      <div class="eyebrow-line"></div>
-      <span class="eyebrow-text">Ph.D. Candidate · Economics · GSU</span>
+    <div class="profile-photo-wrap">
+      <img src="photo2.jpg" alt="Faezeh Khosravi" class="profile-img">
     </div>
-    <h1 class="hero-name">Faezeh<em>Khosravi</em></h1>
-    <div class="typewriter-wrap">
-      <span class="typewriter" id="tw"></span>
+    <div class="profile-social">
+      <a href="https://scholar.google.com/citations?hl=en&user=jSAzEL4AAAAJ" target="_blank" class="social-btn">🎓 Scholar</a>
+      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6537038" target="_blank" class="social-btn">📄 SSRN</a>
+      <a href="https://www.linkedin.com/in/faezeh-khosravi-8754a81a3" target="_blank" class="social-btn">💼 LinkedIn</a>
+      <a href="https://x.com/khosravi_faeze" target="_blank" class="social-btn">𝕏 Twitter</a>
     </div>
-    <p class="hero-desc">Applied microeconomist studying labor markets, health policy, and the economics of technological change. Georgia State University · Atlanta, GA · Expected 2028.</p>
-    <div class="hero-btns">
+  </div>
+
+  <div class="profile-right">
+    <div class="profile-tag">Ph.D. Candidate · Georgia State University</div>
+    <h1 class="profile-name">Faezeh <em>Khosravi</em></h1>
+    <div class="profile-identity">Health Economics · Labor Economics · Applied Microeconometrics</div>
+
+    <blockquote class="research-statement">
+      I study how policy and technology reshape labor markets and health — using causal inference to generate evidence that matters for the real world.
+    </blockquote>
+
+    <div class="profile-fields">
+      <span class="field-tag">Health Insurance Markets</span>
+      <span class="field-tag">Generative AI & Labor</span>
+      <span class="field-tag">Healthcare Hiring</span>
+      <span class="field-tag">Geographic Mobility</span>
+      <span class="field-tag">Causal Inference</span>
+    </div>
+
+    <div class="profile-btns">
       <a href="#contact" class="btn btn-primary">✉ Get in Touch</a>
-      <a href="#research" class="btn btn-ghost">View Research</a>
+      <a href="#research" class="btn btn-ghost">View Research →</a>
     </div>
-    <div class="hero-stats">
-      <div><span class="stat-num" data-count="4">0</span><span class="stat-label">Working Papers</span></div>
-      <div><span class="stat-num" data-count="3">0</span><span class="stat-label">Presentations</span></div>
-      <div><span class="stat-num" data-count="8">0</span><span class="stat-label">Fellowships</span></div>
-      <div><span class="stat-num" data-count="6">0</span><span class="stat-label">Yrs Research</span></div>
+
+    <div class="profile-stats">
+      <div class="stat-box"><span class="stat-num" data-count="4">0</span><span class="stat-label">Papers</span></div>
+      <div class="stat-box"><span class="stat-num" data-count="8">0</span><span class="stat-label">Presentations</span></div>
+      <div class="stat-box"><span class="stat-num" data-count="10">0</span><span class="stat-label">Awards</span></div>
+      <div class="stat-box"><span class="stat-num" data-count="4">0</span><span class="stat-label">Reviewerships</span></div>
     </div>
-  </div>
-  <div class="hero-photo">
-    <img src="photo.jpg" alt="Faezeh Khosravi" class="hero-img">
-  </div>
-  <div class="scroll-hint" style="position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);">
-    <span class="scroll-hint-text">Scroll</span>
-    <div class="scroll-hint-bar"></div>
   </div>
 </div>
 
-<!-- NOW -->
-<div class="wrap" style="padding-top:3rem;padding-bottom:0;">
+<!-- NOW BAR -->
+<div class="wrap" style="padding-top:1rem;padding-bottom:0;">
   <div class="now-bar reveal">
     <div class="now-dot"></div>
     <div>
       <div class="now-label">Currently Working On</div>
-      <div class="now-text">Geographic Mobility and Smoking Behavior — estimating exposure effects with fixed-effects models using PSID panel data</div>
+      <div class="now-text">Generative AI Exposure and Healthcare Hiring — separating post-ChatGPT changes from pandemic hiring dynamics using U.S. employer job postings 2018–2026</div>
     </div>
   </div>
 </div>
@@ -288,59 +323,46 @@ footer { border-top: 1px solid var(--border); max-width: 1100px; margin: 0 auto;
 <!-- RESEARCH -->
 <div class="wrap" id="research">
   <div class="sec-label reveal"><span class="sec-label-text">Research</span><div class="sec-label-line"></div></div>
-  <h2 class="sec-title reveal">Working <em>Papers</em></h2>
 
-  <!-- Research focus -->
-  <div class="now-bar reveal" style="margin-bottom:3rem;">
-    <div class="now-dot"></div>
-    <div>
-      <div class="now-label">Research Focus</div>
-      <div class="now-text">Applied microeconomics of labor markets, health policy, and technological change, with an emphasis on causal inference and policy-relevant evidence.</div>
-    </div>
+  <!-- JMP — special block -->
+  <div class="jmp-block reveal">
+    <div class="jmp-label">⭐ Job Market Paper</div>
+    <div class="jmp-title">Pricing Regulation and Health Insurance Coverage: Evidence from the ACA's Gender Rating Ban</div>
+    <div class="jmp-why"><strong>Why it matters:</strong> Before the ACA, insurers could charge women up to 50% more than men for the same health plan. This paper asks: when that ended, did women actually gain coverage — and where did it matter most?</div>
+    <div class="jmp-abstract">Estimates the effect of the Affordable Care Act's prohibition of gender-based pricing on nongroup health insurance coverage using American Community Survey microdata and a difference-in-differences design. Results show increased coverage among women in states with higher pre-policy exposure to gender rating, providing evidence on how anti-discrimination policy affects insurance access.</div>
+    <div style="margin-top:1.25rem;font-size:12px;color:var(--accent);font-style:italic;">Presented at APPAM Fall Research Conference, Boston, MA · 2026</div>
   </div>
 
+  <!-- Other papers -->
+  <h2 class="sec-title reveal" style="margin-top:3rem;">Other Working <em>Papers</em></h2>
   <div>
     <div class="paper reveal">
-      <div class="paper-n">01</div>
-      <div>
-        <div class="paper-badges">
-          <span class="badge b-ssrn">SSRN Working Paper</span>
-          <span class="badge" style="background:rgba(201,168,76,0.15);color:var(--gold)">Dissertation Chapter</span>
-          <span style="font-size:11px;color:var(--ink2)">2026</span>
-        </div>
-        <div class="paper-title"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6537038" target="_blank">Generative AI and Firm Hiring Demand: Evidence from Advanced and Developing Economies</a></div>
-        <p class="paper-desc">Studies how ChatGPT's release affected firm hiring demand using global job posting data. Constructs predetermined firm-level AI exposure with a continuous difference-in-differences design. Firms primarily adjust along the composition margin, with heterogeneous dynamics across advanced and developing economies.</p>
-      </div>
-    </div>
-    <div class="paper reveal d1">
       <div class="paper-n">02</div>
       <div>
-        <div class="paper-badges">
-          <span class="badge b-draft">Draft</span>
-          <span class="badge" style="background:rgba(201,168,76,0.15);color:var(--gold)">Dissertation Chapter</span>
-          <span style="font-size:11px;color:var(--ink2)">2026</span>
-        </div>
-        <div class="paper-title">Price Discrimination and Gender Inequities in Health Insurance: Evidence from the ACA's Gender Rating Ban</div>
-        <p class="paper-desc">Examines the impact of the ACA's gender rating ban on insurance coverage using ACS data (2010–2018). Leverages cross-state variation in pre-policy pricing practices with difference-in-differences and triple-differences designs. Results show increased coverage among women in highly exposed states, providing evidence on how anti-discrimination policy affects access to insurance.</p>
+        <div class="paper-badges"><span class="badge b-ssrn">SSRN</span><span class="badge b-dis">Dissertation Chapter</span></div>
+        <div class="paper-coauth">with Elaine M. Liu and Alex Bell</div>
+        <div class="paper-title"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6537038" target="_blank">Generative AI and Firm Hiring Demand: Evidence from Advanced and Developing Economies</a></div>
+        <p class="paper-desc">Studies how ChatGPT's release affected firm hiring demand using 115.9 million job postings across 200 economies. Firms primarily adjust along the composition margin — shifting away from AI-substitutable roles — with heterogeneous dynamics across advanced and developing economies.</p>
+        <div style="margin-top:10px;font-size:12px;color:var(--accent);font-style:italic;">IMF–OECD–PIIE–World Bank Conference · APPAM 2026 · AASLE Beijing · GenAI Shanghai</div>
       </div>
     </div>
-    <div class="paper reveal d2">
+
+    <div class="paper reveal d1">
       <div class="paper-n">03</div>
       <div>
-        <div class="paper-badges">
-          <span class="badge b-wip">Work in Progress</span>
-          <span class="badge" style="background:rgba(201,168,76,0.15);color:var(--gold)">Dissertation Chapter</span>
-        </div>
-        <div class="paper-title">Geographic Mobility and Smoking Behavior: Evidence from the PSID</div>
-        <p class="paper-desc">Uses PSID panel data to examine how geographic mobility affects smoking through changes in local environments. Leveraging within-individual variation, fixed-effects models reveal strong evidence of exposure effects, especially during adolescence.</p>
+        <div class="paper-badges"><span class="badge b-wip">Work in Progress</span><span class="badge b-solo">Solo-Authored</span><span class="badge b-dis">Dissertation Chapter</span></div>
+        <div class="paper-title">Generative AI Exposure and Healthcare Hiring: Timing Evidence from Employer Job Postings</div>
+        <p class="paper-desc">Uses a firm-state-occupation-quarter panel of U.S. healthcare job postings 2018–2026 to estimate how generative AI affected healthcare hiring, separating post-ChatGPT changes from pandemic dynamics and the 2022–2023 white-collar slowdown.</p>
       </div>
     </div>
-    <div class="paper reveal d3">
+
+    <div class="paper reveal d2">
       <div class="paper-n">04</div>
       <div>
-        <div class="paper-badges"><span class="badge b-wip">Work in Progress</span></div>
-        <div class="paper-title">Reevaluating Medicaid Expansion Using Callaway–Sant'Anna Difference-in-Differences</div>
-        <p class="paper-desc">Revisits the effects of Medicaid expansion using modern staggered-adoption DiD estimators with CPS data.</p>
+        <div class="paper-badges"><span class="badge b-wip">Work in Progress</span><span class="badge b-dis">Dissertation Chapter</span></div>
+        <div class="paper-coauth">with Alex Bell</div>
+        <div class="paper-title">Geographic Mobility and Smoking Behavior: Evidence from the PSID</div>
+        <p class="paper-desc">Uses longitudinal PSID data to study how migration across local smoking environments affects individual smoking behavior, with strong evidence of exposure effects during adolescence.</p>
       </div>
     </div>
   </div>
@@ -352,6 +374,24 @@ footer { border-top: 1px solid var(--border); max-width: 1100px; margin: 0 auto;
   <p class="quote-by" id="qby"></p>
 </div>
 
+<!-- CONFERENCES -->
+<div class="wrap">
+  <div class="sec-label reveal"><span class="sec-label-text">Presentations</span><div class="sec-label-line"></div></div>
+  <h2 class="sec-title reveal">Conference <em>Presentations</em></h2>
+  <div class="conf-grid">
+    <div class="conf-item reveal"><div class="conf-dot"></div><div><div class="conf-venue">IMF–OECD–PIIE–World Bank Conference</div><div class="conf-detail">Labor Markets, AI & Demography · Washington, DC</div><div class="conf-year">2026</div></div></div>
+    <div class="conf-item reveal d1"><div class="conf-dot"></div><div><div class="conf-venue">APPAM Fall Research Conference</div><div class="conf-detail">AI Hiring + ACA Gender Rating · Boston, MA</div><div class="conf-year">2026</div></div></div>
+    <div class="conf-item reveal d2"><div class="conf-dot"></div><div><div class="conf-venue">Beyond Automation: GenAI & Economics</div><div class="conf-detail">East China Normal University · Shanghai</div><div class="conf-year">2026</div></div></div>
+    <div class="conf-item reveal d3"><div class="conf-dot"></div><div><div class="conf-venue">AASLE Annual Conference</div><div class="conf-detail">Asian & Australasian Labour Economics · Beijing</div><div class="conf-year">2026</div></div></div>
+    <div class="conf-item reveal"><div class="conf-dot"></div><div><div class="conf-venue">Dewey Data Research Seminar with LinkUp</div><div class="conf-detail">Invited — AI & hiring demand</div><div class="conf-year">2026</div></div></div>
+    <div class="conf-item reveal d1"><div class="conf-dot"></div><div><div class="conf-venue">GSU Scientific Computing Day</div><div class="conf-detail">Invited presentation · Atlanta, GA</div><div class="conf-year">2026</div></div></div>
+    <div class="conf-item reveal d2"><div class="conf-dot"></div><div><div class="conf-venue">ASHEcon Annual Conference</div><div class="conf-detail">Medicaid Expansion DiD · Poster</div><div class="conf-year">2026</div></div></div>
+    <div class="conf-item reveal d3"><div class="conf-dot"></div><div><div class="conf-venue">APPAM — Session Chair & Discussant</div><div class="conf-detail">Rural Health Access + Student Panel</div><div class="conf-year">2025</div></div></div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
 <!-- BACKGROUND -->
 <div class="wrap" id="background">
   <div class="sec-label reveal"><span class="sec-label-text">Background</span><div class="sec-label-line"></div></div>
@@ -359,70 +399,20 @@ footer { border-top: 1px solid var(--border); max-width: 1100px; margin: 0 auto;
     <div>
       <h2 class="sec-title reveal">Education &<br><em>Experience</em></h2>
       <div class="timeline">
-        <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2022 — 2028</div><div class="tl-role">Ph.D. in Economics</div><div class="tl-place">Georgia State University, Atlanta</div><div class="tl-note">M.A. conferred 2024</div></div>
-        <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2023 — present</div><div class="tl-role">Graduate Research Assistant</div><div class="tl-place">Department of Economics, GSU</div><div class="tl-note">3+ years supporting faculty research in applied microeconomics</div></div>
-        <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2026</div><div class="tl-role">Selected Research Scholar</div><div class="tl-place">Institute for Research on Poverty (IRP) · UW–Madison & Howard University</div><div class="tl-note">One of 11 scholars selected nationally · researched poverty, health policy & inequality under faculty mentorship · IRP is the nation's oldest poverty research institute</div></div>
-        <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2026</div><div class="tl-role">Selected Scholar, QuEST Training</div><div class="tl-place">American Institutes for Research (AIR) · Chicago</div><div class="tl-note">Competitive national selection · advanced training in quantitative evidence synthesis, causal inference & policy evaluation</div></div>
-        <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">Fall 2023 — Summer 2026</div><div class="tl-role">Teaching Assistant</div><div class="tl-place">Georgia State University</div><div class="tl-note">Intermediate Macroeconomics · Economic Development · Principles of Macroeconomics</div></div>
-        <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">Spring 2026</div><div class="tl-role">Instructor of Record</div><div class="tl-place">Principles of Microeconomics (ECON 2106), GSU</div><div class="tl-note">Solo instructor · Teaching evaluation: 4.7 / 5.0</div></div>
-        <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">Jul — Nov 2022</div><div class="tl-role">Policy Intern</div><div class="tl-place">Insurance Research Center, Tehran</div><div class="tl-note">Authored regulatory reports · designed survey instruments for Ministry of Economy</div></div>
-        <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">Jun — Aug 2020</div><div class="tl-role">Research Assistant</div><div class="tl-place">Income Distribution Project, Iran</div><div class="tl-note">Analyzed national household survey data · contributed to inequality policy reports</div></div>
-        <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2019 — 2022</div><div class="tl-role">M.Sc. in Theoretical Economics</div><div class="tl-place">Al-Zahra University, Tehran</div><div class="tl-note">Thesis: Underwriting Cycles and Business Cycles in Iran's Insurance Sector</div></div>
-        <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2015 — 2019</div><div class="tl-role">B.Sc. in Theoretical Economics</div><div class="tl-place">University of Mazandaran</div><div class="tl-note">First Class Honors · Ranked Top 3</div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2023 — Expected 2027</div><div class="tl-role">Ph.D. in Economics</div><div class="tl-place">Georgia State University, Atlanta</div><div class="tl-note">M.A. conferred 2024 · GRA 2023–present</div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2026</div><div class="tl-role">IRP Dissertation Award ($4,950)</div><div class="tl-place">Institute for Research on Poverty, UW–Madison</div><div class="tl-note">One of 4 selected from 11-scholar national cohort</div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2026</div><div class="tl-role">Selected Scholar — AIR QuEST Training</div><div class="tl-place">American Institutes for Research, Chicago</div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">Jul–Nov 2022</div><div class="tl-role">Policy Research Intern</div><div class="tl-place">Insurance Research Center, Tehran</div><div class="tl-note">Regulatory reports · Ministry of Economy</div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2019–2022</div><div class="tl-role">M.Sc. in Theoretical Economics</div><div class="tl-place">Al-Zahra University, Tehran</div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2015–2019</div><div class="tl-role">B.Sc. in Theoretical Economics</div><div class="tl-place">University of Mazandaran</div><div class="tl-note">First Class Honors · Ranked Top 3</div></div>
       </div>
     </div>
     <div>
       <h2 class="sec-title reveal">Skills &<br><em>Methods</em></h2>
-      <div class="skill-card reveal"><div class="skill-icon">📐</div><div class="skill-title">Econometrics</div><div class="skill-body">Difference-in-Differences · Triple Differences · Event Studies · Continuous Treatment · Synthetic Control · Staggered Adoption Designs</div></div>
-      <div class="skill-card reveal d1"><div class="skill-icon">💻</div><div class="skill-title">Programming</div><div class="skill-body">Stata (advanced) · R · Python · LaTeX · Excel · Tableau</div></div>
-      <div class="skill-card reveal d2"><div class="skill-icon">🗄️</div><div class="skill-title">Data</div><div class="skill-body">ACS · CPS · PSID · LinkUp job postings · Large-scale panel processing (GSU ARCTIC HPC)</div></div>
-    </div>
-  </div>
-</div>
-
-<div class="divider"></div>
-
-<!-- TEACHING -->
-<div class="wrap" id="teaching">
-  <div class="sec-label reveal"><span class="sec-label-text">Teaching</span><div class="sec-label-line"></div></div>
-  <div class="two-col">
-    <div>
-      <h2 class="sec-title reveal">Teaching<br><em>Experience</em></h2>
-      <div style="margin-bottom:1.5rem;" class="reveal">
-        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1rem;">
-          <div style="font-family:var(--serif);font-size:3rem;font-weight:300;color:var(--accent);line-height:1;">4.7</div>
-          <div>
-            <div style="font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink2);">Teaching Evaluation</div>
-            <div style="font-size:13px;color:var(--ink2);">out of 5.0 · First semester as Instructor of Record</div>
-          </div>
-        </div>
-      </div>
-      <div class="timeline">
-        <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">Spring 2026</div><div class="tl-role">Instructor of Record</div><div class="tl-place">Principles of Microeconomics · ECON 2106 · GSU</div></div>
-        <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">Fall 2023 — Summer 2026</div><div class="tl-role">Teaching Assistant</div><div class="tl-place">Intermediate Macroeconomic Theory · Economic Development · Principles of Macroeconomics · GSU</div></div>
-        <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">Spring 2016</div><div class="tl-role">Teaching Assistant</div><div class="tl-place">Statistics I & II · University of Mazandaran</div></div>
-      </div>
-    </div>
-    <div>
-      <h2 class="sec-title reveal">What Students<br><em>Say</em></h2>
-      <div style="display:flex;flex-direction:column;gap:1rem;">
-        <div class="skill-card reveal" style="border-left:3px solid var(--accent);">
-          <div style="font-family:var(--serif);font-size:1.05rem;font-style:italic;line-height:1.6;color:var(--ink);margin-bottom:8px;">"Also so refreshing to see a woman teaching this class, inspiring even. Thank you!"</div>
-          <div style="font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink2);">— Student, ECON 2106</div>
-        </div>
-        <div class="skill-card reveal d1" style="border-left:3px solid var(--accent);">
-          <div style="font-family:var(--serif);font-size:1.05rem;font-style:italic;line-height:1.6;color:var(--ink);margin-bottom:8px;">"The assignments+grading system really reflected on how much you care for your students."</div>
-          <div style="font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink2);">— Student, ECON 2106</div>
-        </div>
-        <div class="skill-card reveal d2" style="border-left:3px solid var(--accent);">
-          <div style="font-family:var(--serif);font-size:1.05rem;font-style:italic;line-height:1.6;color:var(--ink);margin-bottom:8px;">"You made me enjoy and understand economics a lot more than I have in the past."</div>
-          <div style="font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink2);">— Student, ECON 2106</div>
-        </div>
-        <div class="skill-card reveal d3" style="border-left:3px solid var(--accent);">
-          <div style="font-family:var(--serif);font-size:1.05rem;font-style:italic;line-height:1.6;color:var(--ink);margin-bottom:8px;">"Thank you for providing such organized structure to this course."</div>
-          <div style="font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink2);">— Student, ECON 2106</div>
-        </div>
-      </div>
+      <div class="skill-card reveal"><div class="skill-icon">📐</div><div class="skill-title">Econometrics</div><div class="skill-body">Difference-in-Differences · Triple Differences · Event Studies · Continuous Treatment · Synthetic Control · Staggered Adoption</div></div>
+      <div class="skill-card reveal d1"><div class="skill-icon">💻</div><div class="skill-title">Programming</div><div class="skill-body">Stata (Advanced) · Python · R · LaTeX · Tableau · Power BI</div></div>
+      <div class="skill-card reveal d2"><div class="skill-icon">🗄️</div><div class="skill-title">Data</div><div class="skill-body">ACS · CPS · PSID · LinkUp Job Postings · GSU ARCTIC HPC</div></div>
+      <div class="skill-card reveal d3"><div class="skill-icon">🔍</div><div class="skill-title">Journal Reviewer</div><div class="skill-body">Review of Economics and Statistics · Journal of Health Economics and Outcomes Research · Policy Design and Practice · Value in Health · ASHEcon</div></div>
     </div>
   </div>
 </div>
@@ -434,51 +424,69 @@ footer { border-top: 1px solid var(--border); max-width: 1100px; margin: 0 auto;
   <div class="sec-label reveal"><span class="sec-label-text">Recognition</span><div class="sec-label-line"></div></div>
   <h2 class="sec-title reveal">Honors &<br><em>Fellowships</em></h2>
   <div>
-    <div class="award reveal"><span class="award-name">QuEST Training, American Institutes for Research — competitive selection</span><span class="award-yr">2026</span></div>
-    <div class="award reveal"><span class="award-name">Graduate Student Research Workshop on Poverty & Economic Mobility — Howard / UW–Madison</span><span class="award-yr">2026</span></div>
-    <div class="award reveal"><span class="award-name">Reviewer, Value in Health & Value in Health Regional Issues (ISPOR Journals)</span><span class="award-yr">2026–</span></div>
-    <div class="award reveal"><span class="award-name">Reviewer, American Society of Health Economists (ASHEcon)</span><span class="award-yr">2026</span></div>
-    <div class="award reveal"><span class="award-name">Session Chair & Discussant, APPAM Rural Health Access Panel</span><span class="award-yr">2025</span></div>
+    <div class="award reveal"><span class="award-name">IRP Dissertation Award — UW–Madison ($4,950) · one of 4 from 11-scholar national cohort</span><span class="award-yr">2026</span></div>
+    <div class="award reveal"><span class="award-name">AEA CSWEP Mentoring Workshop — Successfully Navigating Your Economics PhD ($1,000 stipend)</span><span class="award-yr">2026</span></div>
+    <div class="award reveal"><span class="award-name">Selected Research Scholar — IRP Graduate Student Research Workshop (one of 11 nationally)</span><span class="award-yr">2026</span></div>
+    <div class="award reveal"><span class="award-name">Selected Scholar — AIR Quantitative Evidence Synthesis Training, Chicago</span><span class="award-yr">2026</span></div>
     <div class="award reveal"><span class="award-name">E.D. (Jack) Dunn Fellowship, Georgia State University</span><span class="award-yr">2025</span></div>
     <div class="award reveal"><span class="award-name">Dissertation Fellowship, Iran Insurance Research Center</span><span class="award-yr">2020, 2022</span></div>
     <div class="award reveal"><span class="award-name">Top 1% — National M.A. Entrance Exam (20,000+ students)</span><span class="award-yr">2019</span></div>
-    <div class="award reveal"><span class="award-name">Top Student Award & Full Tuition Waiver, University of Mazandaran</span><span class="award-yr">2015–2019</span></div>
+    <div class="award reveal"><span class="award-name">Top Student Award (Third Rank) & Full Tuition Waiver, University of Mazandaran</span><span class="award-yr">2015–2019</span></div>
   </div>
 </div>
 
 <div class="divider"></div>
 
-<!-- MEDIA COVERAGE -->
-<div class="wrap">
+<!-- TEACHING -->
+<div class="wrap" id="teaching">
+  <div class="sec-label reveal"><span class="sec-label-text">Teaching</span><div class="sec-label-line"></div></div>
+  <div class="two-col">
+    <div>
+      <h2 class="sec-title reveal">Teaching<br><em>Experience</em></h2>
+      <div style="display:flex;align-items:center;gap:1.5rem;padding:1.5rem;background:var(--card);border:1px solid var(--border);border-radius:2px;margin-bottom:1.5rem;" class="reveal">
+        <div style="text-align:center;flex-shrink:0;"><div style="font-family:var(--serif);font-size:2.8rem;font-weight:300;color:var(--accent);line-height:1;">4.7</div><div style="font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink2);margin-top:4px;">/ 5.0</div></div>
+        <div><div style="font-size:13px;font-weight:500;color:var(--ink);margin-bottom:4px;">Student Evaluation · First Semester as Instructor</div><div style="font-size:13px;color:var(--ink2);">Principles of Microeconomics (ECON 2106) · GSU · Spring 2026</div></div>
+      </div>
+      <div class="timeline">
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">Spring 2026</div><div class="tl-role">Instructor of Record</div><div class="tl-place">Principles of Microeconomics · ECON 2106 · GSU</div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2023–2026</div><div class="tl-role">Teaching Assistant (3 years)</div><div class="tl-place">Intermediate Macroeconomics · Economic Development · Principles of Macroeconomics · GSU</div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">Spring 2016</div><div class="tl-role">Teaching Assistant</div><div class="tl-place">Statistics I & II · University of Mazandaran</div></div>
+      </div>
+    </div>
+    <div>
+      <h2 class="sec-title reveal">What Students<br><em>Say</em></h2>
+      <div class="quote-card reveal"><div class="quote-card-text">"So refreshing to see a woman teaching this class — inspiring even. Thank you!"</div><div class="quote-card-src">— Student, ECON 2106 · Spring 2026</div></div>
+      <div class="quote-card reveal d1"><div class="quote-card-text">"The grading system really reflected how much you care for your students."</div><div class="quote-card-src">— Student, ECON 2106 · Spring 2026</div></div>
+      <div class="quote-card reveal d2"><div class="quote-card-text">"You made me enjoy and understand economics more than I ever have."</div><div class="quote-card-src">— Student, ECON 2106 · Spring 2026</div></div>
+      <div class="quote-card reveal d3"><div class="quote-card-text">"Thank you for such an organized and thoughtful course structure."</div><div class="quote-card-src">— Student, ECON 2106 · Spring 2026</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- MEDIA -->
+<div class="wrap" id="media">
   <div class="sec-label reveal"><span class="sec-label-text">Media & Coverage</span><div class="sec-label-line"></div></div>
-  <h2 class="sec-title reveal">In the <em>News</em></h2>
-  <div class="reveal">
-    <a href="https://www.linkup.com/insights/blog/inside-the-ai-revolution-linkup-job-data-shows-steady-hiring" target="_blank" style="display:flex;align-items:center;gap:1.5rem;padding:1.5rem;background:var(--card);border:1px solid var(--border);border-radius:2px;text-decoration:none;transition:border-color 0.3s,transform 0.3s;margin-bottom:1rem;" onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateX(6px)'" onmouseout="this.style.borderColor='';this.style.transform=''">
-      <div style="font-size:2rem;flex-shrink:0;">📊</div>
-      <div>
-        <div style="font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;">LinkUp · July 2026</div>
-        <div style="font-family:var(--serif);font-size:1.1rem;color:var(--ink);margin-bottom:4px;">Inside the AI Revolution: LinkUp Job Data Shows Steady Hiring Overall, with a Different Mix of Jobs</div>
-        <div style="font-size:13px;color:var(--ink2);">Research cited as independent academic confirmation of industry findings on AI and hiring demand across 186 countries — same dataset, converging conclusions.</div>
-      </div>
-      <div style="margin-left:auto;color:var(--accent);font-size:1.2rem;flex-shrink:0;">→</div>
+  <h2 class="sec-title reveal">As Featured <em>In</em></h2>
+  <div class="media-grid">
+    <a href="https://arctic.gsu.edu/2026/04/29/how-ai-is-reshaping-the-global-job-market/" target="_blank" class="media-card reveal">
+      <div class="media-source">📡 GSU ARCTIC · April 2026</div>
+      <div class="media-title">"How AI Is Reshaping the Global Job Market"</div>
+      <div class="media-desc">Featured research on generative AI and global hiring demand using GSU's HPC infrastructure.</div>
+      <div class="media-arrow">→</div>
     </a>
-    <a href="https://www.linkedin.com/pulse/data-attribute-pulls-real-salary-from-employer-websites-modeled-xmn5c/" target="_blank" style="display:flex;align-items:center;gap:1.5rem;padding:1.5rem;background:var(--card);border:1px solid var(--border);border-radius:2px;text-decoration:none;transition:border-color 0.3s,transform 0.3s;margin-bottom:1rem;" onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateX(6px)'" onmouseout="this.style.borderColor='';this.style.transform=''">
-      <div style="font-size:2rem;flex-shrink:0;">💼</div>
-      <div>
-        <div style="font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;">Dewey Data · LinkedIn · July 2026</div>
-        <div style="font-family:var(--serif);font-size:1.1rem;color:var(--ink);margin-bottom:4px;">Data Attribute Spotlight: Real Salary from Employer Websites</div>
-        <div style="font-size:13px;color:var(--ink2);">Research featured as a leading example of impactful academic work using LinkUp job records data, in Dewey Data's industry data attribute series.</div>
-      </div>
-      <div style="margin-left:auto;color:var(--accent);font-size:1.2rem;flex-shrink:0;">→</div>
+    <a href="#" class="media-card reveal d1">
+      <div class="media-source">📊 LinkUp Industry Blog · July 2026</div>
+      <div class="media-title">"Inside the AI Revolution: Steady Hiring Overall, with a Different Mix of Jobs"</div>
+      <div class="media-desc">Research on composition shifts in hiring demand after ChatGPT's release.</div>
+      <div class="media-arrow">→</div>
     </a>
-    <a href="https://arctic.gsu.edu/2026/04/29/how-ai-is-reshaping-the-global-job-market/" target="_blank" style="display:flex;align-items:center;gap:1.5rem;padding:1.5rem;background:var(--card);border:1px solid var(--border);border-radius:2px;text-decoration:none;transition:border-color 0.3s,transform 0.3s;" onmouseover="this.style.borderColor='var(--accent)';this.style.transform='translateX(6px)'" onmouseout="this.style.borderColor='';this.style.transform=''">
-      <div style="font-size:2rem;flex-shrink:0;">📰</div>
-      <div>
-        <div style="font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);margin-bottom:4px;">GSU ARCTIC · April 2026</div>
-        <div style="font-family:var(--serif);font-size:1.1rem;color:var(--ink);margin-bottom:4px;">How AI is Reshaping the Global Job Market</div>
-        <div style="font-size:13px;color:var(--ink2);">Coverage of research on generative AI and firm hiring demand across advanced and developing economies.</div>
-      </div>
-      <div style="margin-left:auto;color:var(--accent);font-size:1.2rem;flex-shrink:0;">→</div>
+    <a href="#" class="media-card reveal d2">
+      <div class="media-source">💼 Dewey Data · LinkedIn · July 2026</div>
+      <div class="media-title">Research Highlighted for Innovative Use of Employer Job Posting Data</div>
+      <div class="media-desc">Recognized as an example of academic work using employer-generated career site data.</div>
+      <div class="media-arrow">→</div>
     </a>
   </div>
 </div>
@@ -487,11 +495,11 @@ footer { border-top: 1px solid var(--border); max-width: 1100px; margin: 0 auto;
 
 <!-- CONTACT -->
 <div class="wrap" id="contact">
-  <div class="sec-label reveal"><span class="sec-label-text">Get in Touch</span><div class="sec-label-line"></div></div>
+  <div class="sec-label reveal"><span class="sec-label-text">Contact</span><div class="sec-label-line"></div></div>
   <div class="contact-grid">
     <div class="reveal">
       <h2 class="sec-title">Let's <em>Connect</em></h2>
-      <p class="contact-desc">I welcome questions about my research, potential collaborations, or conversations about economics. Use the message form to reach out — or find me on any of the platforms below.</p>
+      <p class="contact-desc">I welcome questions about my research, potential collaborations, or conversations about economics. Use the message form or find me below.</p>
       <a href="https://scholar.google.com/citations?hl=en&user=jSAzEL4AAAAJ" target="_blank" class="contact-link"><span class="c-icon">🎓</span>Google Scholar</a>
       <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6537038" target="_blank" class="contact-link"><span class="c-icon">📄</span>SSRN Profile</a>
       <a href="https://www.linkedin.com/in/faezeh-khosravi-8754a81a3" target="_blank" class="contact-link"><span class="c-icon">💼</span>LinkedIn</a>
@@ -500,24 +508,15 @@ footer { border-top: 1px solid var(--border); max-width: 1100px; margin: 0 auto;
     <div class="reveal d1">
       <div class="msg-box">
         <div class="msg-title">Leave a Message</div>
-        <div class="msg-sub">You can reach out anonymously — no account needed.</div>
+        <div class="msg-sub">Reach out anonymously — no account needed.</div>
         <div id="msg-form">
           <label class="anon-toggle"><input type="checkbox" id="anon" onchange="toggleAnon()"> Send anonymously</label>
-          <div class="form-group" id="name-wrap">
-            <label class="form-label">Your Name</label>
-            <input class="form-input" id="f-name" placeholder="Optional">
-          </div>
-          <div class="form-group">
-            <label class="form-label">Subject</label>
-            <input class="form-input" id="f-subject" placeholder="Research question, collaboration...">
-          </div>
-          <div class="form-group">
-            <label class="form-label">Message</label>
-            <textarea class="form-textarea" id="f-body" placeholder="Write your message here..."></textarea>
-          </div>
+          <div class="form-group" id="name-wrap"><label class="form-label">Your Name</label><input class="form-input" id="f-name" placeholder="Optional"></div>
+          <div class="form-group"><label class="form-label">Subject</label><input class="form-input" id="f-subject" placeholder="Research question, collaboration..."></div>
+          <div class="form-group"><label class="form-label">Message</label><textarea class="form-textarea" id="f-body" placeholder="Write your message here..."></textarea></div>
           <button class="btn btn-primary form-btn" onclick="sendMsg()">Send Message →</button>
         </div>
-        <div class="form-success" id="f-success">✦ Thank you —<br>your message has been sent!</div>
+        <div class="form-success" id="f-success">✦ Thank you — your message has been sent!</div>
       </div>
     </div>
   </div>
@@ -525,81 +524,55 @@ footer { border-top: 1px solid var(--border); max-width: 1100px; margin: 0 auto;
 
 <footer>
   <span>© 2026 Faezeh Khosravi · Georgia State University · Atlanta, GA</span>
-  <div style="display:flex;gap:1.5rem;align-items:center;">
-    <a href="https://scholar.google.com/citations?hl=en&user=jSAzEL4AAAAJ" target="_blank" style="color:var(--ink2);text-decoration:none;font-size:13px;transition:color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color=''">Scholar</a>
-    <a href="https://www.linkedin.com/in/faezeh-khosravi-8754a81a3" target="_blank" style="color:var(--ink2);text-decoration:none;font-size:13px;transition:color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color=''">LinkedIn</a>
-    <a href="https://x.com/khosravi_faeze" target="_blank" style="color:var(--ink2);text-decoration:none;font-size:13px;transition:color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color=''">X</a>
-    <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6537038" target="_blank" style="color:var(--ink2);text-decoration:none;font-size:13px;transition:color 0.2s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color=''">SSRN</a>
+  <div class="footer-links">
+    <a href="https://scholar.google.com/citations?hl=en&user=jSAzEL4AAAAJ" target="_blank">Scholar</a>
+    <a href="https://www.linkedin.com/in/faezeh-khosravi-8754a81a3" target="_blank">LinkedIn</a>
+    <a href="https://x.com/khosravi_faeze" target="_blank">X</a>
+    <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6537038" target="_blank">SSRN</a>
   </div>
 </footer>
 
 <script>
-// THEME
-function toggleTheme() {
-  const h = document.documentElement;
-  const dark = h.getAttribute('data-theme') === 'dark';
-  h.setAttribute('data-theme', dark ? 'light' : 'dark');
-  document.getElementById('themeBtn').textContent = dark ? '☀️' : '🌙';
+function toggleTheme(){
+  const h=document.documentElement,dark=h.getAttribute('data-theme')==='dark';
+  h.setAttribute('data-theme',dark?'light':'dark');
+  document.getElementById('themeBtn').textContent=dark?'☀️':'🌙';
 }
-
-// TYPEWRITER
-const phrases = ['Applied Microeconomist','Health Policy Researcher','Labor Economics · GSU','Causal Inference Methods','Ph.D. Candidate · 2028'];
-let pi = 0, ci = 0, del = false;
-const tw = document.getElementById('tw');
-function type() {
-  const p = phrases[pi];
-  if (!del) { tw.textContent = p.slice(0, ++ci); if (ci === p.length) { del = true; setTimeout(type, 2200); return; } }
-  else { tw.textContent = p.slice(0, --ci); if (ci === 0) { del = false; pi = (pi+1)%phrases.length; } }
-  setTimeout(type, del ? 38 : 75);
-}
-type();
-
-// COUNTERS
-function runCounters() {
-  document.querySelectorAll('.stat-num[data-count]').forEach(el => {
-    const t = parseInt(el.dataset.count); let c = 0;
-    const iv = setInterval(() => { c = Math.min(c+1, t); el.textContent = c + (t >= 6 ? '+' : ''); if (c >= t) clearInterval(iv); }, 60);
+function runCounters(){
+  document.querySelectorAll('.stat-num[data-count]').forEach(el=>{
+    const t=parseInt(el.dataset.count);let c=0;
+    const iv=setInterval(()=>{c=Math.min(c+1,t);el.textContent=c+(t>=8?'+':'');if(c>=t)clearInterval(iv);},70);
   });
 }
-setTimeout(runCounters, 1000);
-
-// SCROLL REVEAL
-const obs = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }), { threshold: 0.08 });
-document.querySelectorAll('.reveal, .tl-item').forEach(el => obs.observe(el));
-
-// QUOTES
-const qs = [
-  {t:"The impediment to action advances action. What stands in the way becomes the way.", a:"Marcus Aurelius"},
-  {t:"You have power over your mind, not outside events. Realize this, and you will find strength.", a:"Marcus Aurelius"},
-  {t:"It does not matter how slowly you go as long as you do not stop.", a:"Confucius"},
-  {t:"The world breaks everyone, and afterward, some are strong at the broken places.", a:"Ernest Hemingway"},
-  {t:"What you seek is seeking you.", a:"Rumi"},
-  {t:"Do not go where the path may lead; go instead where there is no path and leave a trail.", a:"Ralph Waldo Emerson"},
+setTimeout(runCounters,600);
+const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');}),{threshold:0.08});
+document.querySelectorAll('.reveal,.tl-item').forEach(el=>obs.observe(el));
+const qs=[
+  {t:"The impediment to action advances action. What stands in the way becomes the way.",a:"Marcus Aurelius"},
+  {t:"You have power over your mind, not outside events. Realize this, and you will find strength.",a:"Marcus Aurelius"},
+  {t:"It does not matter how slowly you go as long as you do not stop.",a:"Confucius"},
+  {t:"What you seek is seeking you.",a:"Rumi"},
+  {t:"The world breaks everyone, and afterward, some are strong at the broken places.",a:"Ernest Hemingway"},
+  {t:"Do not go where the path may lead; go instead where there is no path and leave a trail.",a:"Ralph Waldo Emerson"},
 ];
-let qi = 0;
-function showQ() {
-  const qq = document.getElementById('qq'), qby = document.getElementById('qby');
-  qq.style.opacity = 0;
-  setTimeout(() => { qq.textContent = qs[qi].t; qby.textContent = '— ' + qs[qi].a; qq.style.opacity = 1; qi = (qi+1)%qs.length; }, 500);
+let qi=0;
+function showQ(){
+  const qq=document.getElementById('qq'),qby=document.getElementById('qby');
+  qq.style.opacity=0;
+  setTimeout(()=>{qq.textContent=qs[qi].t;qby.textContent='— '+qs[qi].a;qq.style.opacity=1;qi=(qi+1)%qs.length;},500);
 }
-showQ(); setInterval(showQ, 6000);
-
-// ANON TOGGLE
-function toggleAnon() {
-  document.getElementById('name-wrap').style.display = document.getElementById('anon').checked ? 'none' : 'block';
-}
-
-// SEND MESSAGE — email hidden from public view
-function sendMsg() {
-  const anon = document.getElementById('anon').checked;
-  const name = anon ? 'Anonymous' : (document.getElementById('f-name').value || 'Anonymous');
-  const subj = document.getElementById('f-subject').value || 'Message from website';
-  const body = document.getElementById('f-body').value;
-  if (!body.trim()) { alert('Please write a message first!'); return; }
-  const e = ['f','k','h','o','s','r','a','v','i','1','@','g','s','u','.','e','d','u'].join('');
-  window.location.href = `mailto:${e}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent('From: '+name+'\n\n'+body)}`;
-  document.getElementById('msg-form').style.display = 'none';
-  document.getElementById('f-success').style.display = 'block';
+showQ();setInterval(showQ,6000);
+function toggleAnon(){document.getElementById('name-wrap').style.display=document.getElementById('anon').checked?'none':'block';}
+function sendMsg(){
+  const anon=document.getElementById('anon').checked;
+  const name=anon?'Anonymous':(document.getElementById('f-name').value||'Anonymous');
+  const subj=document.getElementById('f-subject').value||'Message from website';
+  const body=document.getElementById('f-body').value;
+  if(!body.trim()){alert('Please write a message first!');return;}
+  const e=['f','k','h','o','s','r','a','v','i','1','@','g','s','u','.','e','d','u'].join('');
+  window.location.href=`mailto:${e}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent('From: '+name+'\n\n'+body)}`;
+  document.getElementById('msg-form').style.display='none';
+  document.getElementById('f-success').style.display='block';
 }
 </script>
 </body>
