@@ -66,6 +66,8 @@ body {
   grid-template-columns: 180px 1fr;
   gap: 40px;
   margin-bottom: 52px;
+  align-items: start;
+  overflow: hidden;
 }
 
 .profile-img {
@@ -75,6 +77,8 @@ body {
   object-position: center top;
   display: block;
   border: 1px solid var(--border);
+  flex-shrink: 0;
+  max-width: 180px;
 }
 
 .profile-name {
