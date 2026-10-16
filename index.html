@@ -20,14 +20,15 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg: #ffffff;
-  --ink: #111;
-  --ink2: #555;
-  --ink3: #888;
-  --accent: #8b3a2a;
-  --border: #e5e5e5;
-  --serif: 'Crimson Pro', Georgia, serif;
-  --sans: 'Inter', sans-serif;
+  --bg: #f5f2ec;
+  --bg2: #edeae2;
+  --ink: #1c1917;
+  --ink2: #57534e;
+  --ink3: #8a8480;
+  --accent: #9b4523;
+  --border: rgba(28,25,23,0.12);
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Outfit', sans-serif;
 }
 
 body {
@@ -295,9 +296,6 @@ footer {
       <span class="paper-jmp">[Job Market Paper]</span>
     </div>
     <div class="paper-meta">Presented at APPAM Annual Conference, Boston, MA · 2026</div>
-    <div class="paper-abstract">
-      Estimates the effect of the Affordable Care Act's prohibition of gender-based pricing on nongroup health insurance coverage using American Community Survey microdata and a difference-in-differences design. Results show increased coverage among women in states with higher pre-policy exposure to gender rating.
-    </div>
   </div>
 
   <div class="paper">
@@ -305,26 +303,17 @@ footer {
       <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6537038" target="_blank">Generative AI and Firm Hiring Demand: Evidence from Advanced and Developing Economies</a>
     </div>
     <div class="paper-meta">with Elaine M. Liu and Alex Bell · SSRN Working Paper · 2026</div>
-    <div class="paper-meta">IMF–OECD–PIIE–World Bank Conference · APPAM 2026 · AASLE Beijing · GenAI Shanghai</div>
-    <div class="paper-abstract">
-      Studies how ChatGPT's release affected firm hiring demand using 115.9 million job postings across 200 economies. Firms primarily adjust along the composition margin, with heterogeneous dynamics across advanced and developing economies.
-    </div>
+    <div class="paper-meta">IMF–OECD–PIIE–World Bank Conference · APPAM 2026 · AASLE Beijing (accepted, declined) · GenAI Shanghai (accepted, declined)</div>
   </div>
 
   <div class="paper">
     <div class="paper-title">Generative AI Exposure and Healthcare Hiring: Timing Evidence from Employer Job Postings</div>
     <div class="paper-meta">Solo-authored · Work in Progress · Dissertation Chapter</div>
-    <div class="paper-abstract">
-      Uses a firm-state-occupation-quarter panel of U.S. healthcare job postings from 2018–2026 to estimate how generative AI affected healthcare hiring, separating post-ChatGPT changes from pandemic dynamics and the 2022–2023 white-collar slowdown.
-    </div>
   </div>
 
   <div class="paper">
     <div class="paper-title">Geographic Mobility and Smoking Behavior: Evidence from the PSID</div>
     <div class="paper-meta">with Alex Bell · Work in Progress · Dissertation Chapter</div>
-    <div class="paper-abstract">
-      Uses longitudinal PSID data to study how migration across local smoking environments affects individual smoking behavior, with strong evidence of exposure effects during adolescence.
-    </div>
   </div>
 </section>
 
@@ -358,8 +347,8 @@ footer {
 <!-- HONORS -->
 <section>
   <div class="sec-head">Selected Honors & Fellowships</div>
-  <div class="exp-row"><div class="exp-left">IRP Dissertation Award, Institute for Research on Poverty, UW–Madison ($4,950)</div><div class="exp-right">2026</div></div>
-  <div class="exp-row"><div class="exp-left">AEA CSWEP Mentoring Workshop ($1,000 stipend)</div><div class="exp-right">2026</div></div>
+  <div class="exp-row"><div class="exp-left">IRP Dissertation Award, Institute for Research on Poverty, UW–Madison</div><div class="exp-right">2026</div></div>
+  <div class="exp-row"><div class="exp-left">AEA CSWEP Mentoring Workshop</div><div class="exp-right">2026</div></div>
   <div class="exp-row"><div class="exp-left">Selected Research Scholar, IRP Graduate Student Research Workshop (1 of 11 nationally)</div><div class="exp-right">2026</div></div>
   <div class="exp-row"><div class="exp-left">Selected Scholar, AIR Quantitative Evidence Synthesis Training, Chicago</div><div class="exp-right">2026</div></div>
   <div class="exp-row"><div class="exp-left">E.D. (Jack) Dunn Fellowship, Georgia State University</div><div class="exp-right">2025</div></div>
@@ -376,9 +365,51 @@ footer {
   </div>
 </section>
 
+<!-- ROTATING QUOTE -->
+<section style="border-top:1px solid var(--border); padding-top:32px; margin-bottom:0;">
+  <div id="quote-display" style="font-family:var(--serif); font-size:1.15rem; font-style:italic; color:var(--ink2); line-height:1.75; max-width:600px; min-height:60px; transition: opacity 0.6s;"></div>
+  <div id="quote-author" style="font-size:12px; color:var(--ink3); margin-top:8px; letter-spacing:0.04em; transition: opacity 0.6s;"></div>
+</section>
+
 <footer>
   © 2026 Faezeh Khosravi · Georgia State University
 </footer>
+
+<script>
+const quotes = [
+  { text: "The cure for boredom is curiosity. There is no cure for curiosity.", author: "— Dorothy Parker" },
+  { text: "An economist is someone who sees something work in practice and wonders if it would work in theory.", author: "— Ronald Reagan" },
+  { text: "If you think education is expensive, try ignorance.", author: "— Derek Bok" },
+  { text: "Research is formalized curiosity. It is poking and prying with a purpose.", author: "— Zora Neale Hurston" },
+  { text: "The good thing about science is that it's true whether or not you believe in it.", author: "— Neil deGrasse Tyson" },
+  { text: "Not everything that counts can be counted, and not everything that can be counted counts.", author: "— William Bruce Cameron" },
+  { text: "Data is not information, information is not knowledge, knowledge is not wisdom.", author: "— Clifford Stoll" },
+  { text: "The economy is a very sensitive organism.", author: "— Hjalmar Schacht" },
+  { text: "In the middle of every difficulty lies opportunity.", author: "— Albert Einstein" },
+  { text: "The beautiful thing about learning is that no one can take it away from you.", author: "— B.B. King" }
+];
+
+let currentIndex = Math.floor(Math.random() * quotes.length);
+
+function showQuote(index) {
+  const qEl = document.getElementById('quote-display');
+  const aEl = document.getElementById('quote-author');
+  qEl.style.opacity = 0;
+  aEl.style.opacity = 0;
+  setTimeout(() => {
+    qEl.textContent = '"' + quotes[index].text + '"';
+    aEl.textContent = quotes[index].author;
+    qEl.style.opacity = 1;
+    aEl.style.opacity = 1;
+  }, 600);
+}
+
+showQuote(currentIndex);
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % quotes.length;
+  showQuote(currentIndex);
+}, 6000);
+</script>
 
 </body>
 </html>
